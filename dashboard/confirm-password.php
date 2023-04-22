@@ -120,7 +120,7 @@
 
         <ul id='item-list'>
            
-            <a href="change_password" class='active-list'><li> You have to confirm your password to continue</li></a>
+            <a href="change_password" class='active-list'><li> Please enter your accounts password to continue </li></a>
            
         </ul><br>
        

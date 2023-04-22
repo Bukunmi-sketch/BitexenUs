@@ -116,11 +116,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.6/dist/sweetalert2.all.min.js"></script>
  <div class="container">
-        <h3>Easily send and receive with just a username</h3><br>
+        <h3>   Please enter the username & Email of the account you wish to receive the BTC</h3><br>
 
         <ul id='item-list'>
            
-            <a href="change_password" class='active-list'><li> Please enter the username & Email of the account you wish to receive the BTC </li></a>
+            <a href="change_password" class='active-list'><li> Easily send and receive with just a username </li></a>
            
         </ul><br>
        
