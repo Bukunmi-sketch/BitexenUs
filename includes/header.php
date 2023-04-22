@@ -365,7 +365,11 @@ echo $bitcoin_price;
         <article style="color: #6494AE; line-height: 20px;"><br>
             <span style="font-size: 10px; font-weight: bold; color: var(--text-color)">REAL ACCOUNT</span><br>
             <span style="font-size: 17px; color: dodgerblue; font-weight: bold;"> <?php echo $bitcoin_price;  ?> <sub>BTC</sub><!-- <span class="btc"></span> <sub>BTC</sub> --></span><br>
+            <?php if($role =='default'): ?>
             <span style="font-size: 13px;">  <?php echo $round_priceofdollar;  ?> <sub>USD</sub></span><br>
+            <?php else: ?>
+            <span style="font-size: 13px;"> </span><br>
+            <?php endif ?>
             <div style="display: flex; align-items: center; font-size: 13px; color: dodgerblue;">
                 <a href="deposit" style='color: dodgerblue'><i class="material-icons" style="font-size: 13px;">account_balance_wallet</i> Deposit </a>
                 <a href="withdrawal" style='color: dodgerblue'><i style="margin: 0 0px 0 20px; font-size: 13px;"  class="material-icons">account_balance_wallet</i> Withdraw </a> 
@@ -423,7 +427,7 @@ echo $bitcoin_price;
 
     <?php 
         if ($acct_status == 0 && $role != 'default') {
-            echo "<div style='padding: 5px; background: orange; font-size: 12px; border-radius: 3px;'><i class='fa fa-info-circle'></i> Hi, $username Kindly Deposit a Minimum of $200 worth of BTC to activate your account ($role) <a href='deposit' style='color: white'><b>Click Here</b></a></div><br>";
+            echo "<div style='padding: 5px; background: orange; font-size: 12px; border-radius: 3px;'><i class='fa fa-info-circle'></i> Hi, $username Kindly Deposit a Minimum of $50 worth of BTC to activate your account ($role) <a href='deposit' style='color: white'><b>Click Here</b></a></div><br>";
         }
        
         if ($acct_status == 0 && $role == 'default') {

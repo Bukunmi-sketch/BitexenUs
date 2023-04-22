@@ -67,6 +67,13 @@
             width: 45%;
         }
     }
+
+    .smallbox{
+        background-color:#3B71CA;
+        border:1px solid #3B71CA;
+        padding:0 30px;
+        border-radius:4px;
+    }
 </style>
 
 <style>
@@ -116,7 +123,7 @@
             ?>
                 <h3 style='color: white'>Payment Confirmation</h3><br><hr style='border: 1px solid transparent; border-bottom: 1px solid #1D2D40'><br>
                 <p style='font-size: 13px; color: white'>Your Order no. <?php echo $TXD?> has been placed successfully.</p><br>
-                <p style='font-size: 13px; color: white'>Please send $200 worth of <span class='modal_type'>BTC</span> <span id='modal_btc_rate' style=' display:none'>0</span> <span class='modal_type' style=' display:none'>BTC</span>  <span id='modal_amount' style=' display:none' >($)</span> to the address below. The balance will appear in your account only after transaction gets confirmed by our team.</p><br>
+                <p style='font-size: 13px; color: white'>Please send $50 worth of <span class='modal_type'>BTC</span> <span id='modal_btc_rate' style=' display:none'>0</span> <span class='modal_type' style=' display:none'>BTC</span>  <span id='modal_amount' style=' display:none' >($)</span> to the address below. The balance will appear in your account only after transaction gets confirmed by our team.</p><br>
                 <h4>Payment to the following <span class='modal_type'>BTC</span> Wallet Address</h4><br>
                 <div style='display: grid; grid-template-columns: 1fr 4fr'>
                 
@@ -125,17 +132,16 @@
                     </article>
 
                     <article style='padding: 5px 10px'><br>
-                        <p style='font-size: 14px'>Send Amount: $200 worth of <span class='modal_type'>BTC</span>  <span style='color: white; display:none'> <span id='modal_btc_rate_two'>0</span> <span class='modal_type'>BTC</span> ($<span id='modal_amount_two'>0</span>)  </span>  </p>
+                        <p style='font-size: 14px'>Send Amount: $50 worth of <span class='modal_type'>BTC</span>  <span style='color: white; display:none'> <span id='modal_btc_rate_two'>0</span> <span class='modal_type'>BTC</span> ($<span id='modal_amount_two'>0</span>)  </span>  </p>
                         <input type="text" readonly  id="myInput" class="inpuut" style='padding: 10px 30px' value='' style='color: white'><p  onclick="myFunction()" class='dol' style='background: transparent; color: #1AE0A1'><i class='material-icons'>content_copy	</i></p><br>
                         <hr style='border: 1px solid transparent; border-bottom: 1px solid #1D2D40'><br>
                         <div style='display: flex'>
-                        <input type="hidden" name='amount' id='post_amount' required>
+                        <input type="text" name='amount' id='post_amount' required>
                         <input type="hidden" name='eth' id='post_eth' required>
                           <?php  if($role =='default'): ?>
-                            <button type='submit' name='submit'>Confirm</button>
+                             <div class='smallbox' onclick='confirmcreate()'>Confirm</div>
                           <?php else: ?> 
-                             <button type='submit' name='submit'>Confirm</button>
-
+                             <button type='submit' name='submit' >Confirm</button>
                           <?php endif ?> 
                             <p id='cancel' style='padding: 10px 7px; text-align: center; background: transparent; color: #d32929; width: 100px; border-radius: 3px; height: 35px; margin: 6px 5px; border:  1px solid #d32929; font-size: 13px'>Cancel</p>
                         </div>
@@ -303,6 +309,12 @@
     cancel.addEventListener('click', function () {
         modal.style.display = 'none'
     })
+
+    
+    function confirmcreate() {
+  swal("ERROR!", "Account has not been created or activated. Please deposit the minimum amount to activate the account", "warning");
+}
+
 
 
     function myFunction() {
