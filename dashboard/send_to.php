@@ -148,9 +148,9 @@
                 } elseif (!empty($st_username) && !empty($st_email) && filter_var($st_email,FILTER_VALIDATE_EMAIL)) {
                     echo '<script>
                     Swal.fire({
-                        title: "SUCCESS",
-                        text: "Kindly Create an Account to easily send and receive crypto within the website ",
-                        icon: "success",
+                        title: "ERROR",
+                        text: " Account not found. Please activate account if this account has already been created ",
+                        icon: "error",
                         showCancelButton: false,
                         confirmButtonColor: "#3085d6",
                         confirmButtonText: "Create An Account"
