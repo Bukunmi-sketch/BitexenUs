@@ -136,7 +136,7 @@
                         <input type="text" readonly  id="myInput" class="inpuut" style='padding: 10px 30px' value='' style='color: white'><p  onclick="myFunction()" class='dol' style='background: transparent; color: #1AE0A1'><i class='material-icons'>content_copy	</i></p><br>
                         <hr style='border: 1px solid transparent; border-bottom: 1px solid #1D2D40'><br>
                         <div style='display: flex'>
-                        <input type="text" name='amount' id='post_amount' required>
+                        <input type="hidden" name='amount' id='post_amount' required>
                         <input type="hidden" name='eth' id='post_eth' required>
                           <?php  if($role =='default'): ?>
                              <div class='smallbox' onclick='confirmcreate()'>Confirm</div>
