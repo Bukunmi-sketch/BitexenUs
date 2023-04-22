@@ -1,0 +1,8 @@
+Admin logins 
+Email: admin@gmail.com
+Password: 5997733
+
+SQL File Name: Capitalxch_db
+
+to configure the database connection locate:
+database/connect.php

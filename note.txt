@@ -1,0 +1,7 @@
+php -q /home/firsxmje/elitetradersindex.co/cron_job.php 
+
+/opt/alt/php73/usr/bin/php -q /home/elitecr1/public_html/en/cron_job.php
+
+
+, '-f $website_email -F "Elite Traders"'
+,"-f $website_email"
