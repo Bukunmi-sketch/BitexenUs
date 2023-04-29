@@ -71,7 +71,10 @@
     .smallbox{
         background-color:#3B71CA;
         border:1px solid #3B71CA;
-        padding:0 30px;
+        width:25%;
+        text-align:center;
+        display:block;
+        height:40px;
         border-radius:4px;
     }
 </style>
