@@ -120,7 +120,7 @@
 
         <ul id='item-list'>
            
-            <a href="change_password" class='active-list'><li> Easily send and receive with just a username </li></a>
+            <a href="change_password" class='active-list'><li> Easily send and receive crypto within our website with just a username </li></a>
            
         </ul><br>
        
