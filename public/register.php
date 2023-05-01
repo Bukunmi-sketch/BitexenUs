@@ -348,7 +348,7 @@
                         <div class="form-group">
                 <div class="custom-control custom-control-xs custom-checkbox">
                     <input type="checkbox" name="confirmation" class="custom-control-input" id="checkbox" data-msg-required=" You should accept our terms." required>
-                    <label class="custom-control-label" for="checkbox">I have agree to the <a href="page/terms-and-condition" target="_blank">Terms & Condition</a></label>
+                    <label class="custom-control-label" for="checkbox">I have agreed to the <a href="page/terms-and-condition" target="_blank">Terms & Conditions</a></label>
                 </div>
             </div>
             

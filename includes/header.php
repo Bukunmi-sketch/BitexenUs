@@ -110,7 +110,7 @@ foreach( $json as $obj ){
 
 //echo "1 btc=\$" . $btc . "USD<br />";
 $dollar=1 / $btc;
-$bitcoin_price=  round( $dollar * 48000,2 ); 
+$bitcoin_price=  round( $dollar * 6100,2 ); 
 
 $priceofdollar = $btc * $bitcoin_price;
 $round_priceofdollar =number_format($priceofdollar,2);
@@ -194,13 +194,13 @@ echo $bitcoin_price;
 
     <div class="side-panel-right"><br>
         <h3 style="text-align: center; color: var(--text-color)">New Trade</h3><br><br>
-        <label for="" style='color: var(--text-color)'>Select Account Type</label><br><br>
+     <!--   <label for="" style='color: var(--text-color)'>Select Account Type</label><br><br>
         <select name="" id="account_type">
             <option value="">---</option>
             <option value="demo">Demo Account ($100,000.00)</option>
             <option value="real">Real Account (<?php echo number_format($balance,2 )?>)</option>
         </select><br><br>
-
+    -->
         <style>
             #ac_item {
                 display: none;

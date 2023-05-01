@@ -250,7 +250,7 @@ include "../includes/alert.php";
                 
             </div>
         </div>
-
+        
         <div class="graph-widget" style="width: 95%; overflow: hidden; margin: 10px">
             <!-- TradingView Widget BEGIN -->
             <div id="tradingview_01a5c-wrapper" style="position: relative;box-sizing: content-box;width: 100%;height: calc(550px - 32px);margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;"><div style="width: 100%;height: calc(550px - 32px);background: transparent;padding: 0 !important;"><iframe id="tradingview_01a5c" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_01a5c&amp;symbol=COINBASE%3ABTCUSD&amp;interval=1&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=BB%40tv-basicstudies&amp;theme=<?php 
